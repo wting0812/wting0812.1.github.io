@@ -8,137 +8,140 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-brand" href="#home">LWT<span aria-hidden="true">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#activities">Free time</a></li>
+        <li><a href="#learning">Learning log</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <a class="nav-brand" href="#home">LWT<span aria-hidden="true">.</span></a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#interests">Interests</a>
-      <a href="#activities">Activities</a>
-      <a href="#learning">Learning Log</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <main id="main">
-    <header class="hero page-width" id="home">
+  <main>
+    <section class="hero page-width" id="home" aria-labelledby="welcome-title">
       <div class="hero-copy">
-        <p class="eyebrow">STUDENT · CURIOUS BY NATURE</p>
-        <h1>Leung Wai Ting</h1>
-        <p class="hero-intro">Studying <strong>Data Science &amp; Business Intelligence</strong>, and learning a little more about the world every day.</p>
-        <a class="text-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow">Student · Data Science &amp; Business Intelligence</p>
+        <h1 id="welcome-title">Leung Wai Ting</h1>
+        <p class="hero-intro">Curious about people, patterns, and the small discoveries that help us grow.</p>
+        <a class="text-link" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
       </div>
-      <figure class="hero-photo">
-        <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="A basketball hoop on an outdoor court" fetchpriority="high">
-        <figcaption>Room to play, practise, and grow.</figcaption>
-      </figure>
-      <span class="hero-number" aria-hidden="true">01 / 06</span>
-    </header>
-
-    <section class="about section-band" id="about" aria-labelledby="about-title">
-      <div class="page-width about-layout">
-        <p class="section-index">01 — A NOTE ABOUT ME</p>
-        <div>
-          <h2 id="about-title">A warm hello.</h2>
-          <p class="about-copy">I am an energetic person. Being warm and inspiring others to become outgoing are what I hope to be.</p>
-        </div>
-        <figure class="detail-photo">
-          <img src="https://images.unsplash.com/photo-1626148749358-5b3b3f45b41a?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="A black magnifying glass resting on paper" loading="lazy">
-          <figcaption>Stay open to the next new thing.</figcaption>
-        </figure>
+      <div class="hero-note" aria-label="A reminder to stay curious">
+        <span class="note-mark" aria-hidden="true">✳</span>
+        <p>Stay curious.<br>Keep showing up.</p>
       </div>
     </section>
 
-    <section class="page-width interests section-space" id="interests" aria-labelledby="interests-title">
-      <p class="section-index">02 — WHAT I ENJOY</p>
-      <h2 id="interests-title">Interests &amp; skills</h2>
+    <section class="content-section page-width about-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">A little introduction</p>
+        <h2 id="about-title">About me</h2>
+      </div>
+      <p class="about-copy">I am an energetic person. I hope to be warm and inspire others to become more outgoing.</p>
+    </section>
+
+    <section class="content-section page-width" id="interests" aria-labelledby="interests-title">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow">What catches my attention</p>
+          <h2 id="interests-title">Interests &amp; skills</h2>
+        </div>
+        <p class="section-aside">A few things I enjoy learning through.</p>
+      </div>
       <div class="interest-grid">
         <article class="interest-item">
-          <span class="item-number" aria-hidden="true">01</span>
-          <h3>Playing basketball</h3>
-          <p>A chance to move, practise, and learn with others.</p>
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Basketball resting on an indoor court" loading="lazy">
+          <div class="item-heading"><span>01</span><h3>Playing basketball</h3></div>
+          <p>Moving, practicing, and learning one play at a time.</p>
         </article>
         <article class="interest-item">
-          <span class="item-number" aria-hidden="true">02</span>
-          <h3>Discovering new things</h3>
-          <p>I enjoy following a question and seeing where it leads.</p>
+          <img src="https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A magnifying glass used to look more closely" loading="lazy">
+          <div class="item-heading"><span>02</span><h3>Discovering new things</h3></div>
+          <p>Following questions and finding something unexpected.</p>
         </article>
         <article class="interest-item">
-          <span class="item-number" aria-hidden="true">03</span>
-          <h3>Enjoy observing</h3>
-          <p>Noticing details helps me understand people and the world around me.</p>
+          <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Soft morning light across a quiet landscape" loading="lazy">
+          <div class="item-heading"><span>03</span><h3>Enjoying observation</h3></div>
+          <p>Noticing small details before deciding what they mean.</p>
         </article>
       </div>
     </section>
 
-    <section class="activities section-band" id="activities" aria-labelledby="activities-title">
-      <div class="page-width activities-layout">
-        <div>
-          <p class="section-index">03 — OFF THE CLOCK</p>
+    <section class="activity-band" id="activities" aria-labelledby="activities-title">
+      <div class="page-width activity-content">
+        <div class="section-heading">
+          <p class="eyebrow">Away from the study desk</p>
           <h2 id="activities-title">Free-time activities</h2>
         </div>
-        <div class="activity-copy">
-          <p>I enjoy playing computer games and listening to K-pop music. They help me train my adaptability and relax at the same time.</p>
-          <div class="activity-tags" aria-label="Activities">
-            <span>Computer games</span>
-            <span>K-pop music</span>
-          </div>
+        <p class="activity-copy">I enjoy playing computer games and listening to K-pop. They help me train my adaptability and relax at the same time.</p>
+        <div class="activity-tags" aria-label="Activities">
+          <span>Computer games</span>
+          <span>K-pop</span>
+          <span>Adaptability</span>
         </div>
       </div>
     </section>
 
-    <section class="page-width learning section-space" id="learning" aria-labelledby="learning-title">
-      <p class="section-index">04 — STILL IN PRACTICE</p>
-      <div class="learning-layout">
+    <section class="content-section page-width learning-section" id="learning" aria-labelledby="learning-title">
+      <div class="section-heading">
+        <p class="eyebrow">Practice in progress</p>
         <h2 id="learning-title">Learning log</h2>
-        <blockquote>
-          <p>I have struggled with my basketball skills, but I keep practising and exercising. Now, I will slow down and break the movements into steps to find how I can improve.</p>
-          <footer>Notes from my practice</footer>
-        </blockquote>
-        <figure class="learning-photo">
-          <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="An empty basketball court, ready for practice" loading="lazy">
-        </figure>
+      </div>
+      <div class="learning-entry">
+        <p class="learning-date">A note to myself</p>
+        <p>I got stuck with my basketball skills, but I kept practicing and exercising. Now I am slowing down and breaking each movement into smaller steps so I can understand how to improve.</p>
       </div>
     </section>
 
-    <section class="projects section-band" id="projects" aria-labelledby="projects-title">
+    <section class="content-section projects-section" id="projects" aria-labelledby="projects-title">
       <div class="page-width">
-        <p class="section-index">05 — WORK IN PROGRESS</p>
-        <div class="projects-heading">
-          <h2 id="projects-title">Projects</h2>
-          <p>Small beginnings, with room to grow.</p>
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">A space for what's next</p>
+            <h2 id="projects-title">Projects</h2>
+          </div>
+          <p class="section-aside">Starter cards, ready for your own work.</p>
         </div>
+        <!-- Replace each sample title and description with details of your own project. -->
         <div class="project-grid">
           <article class="project-card" tabindex="0">
-            <p class="project-label">PROJECT 01</p>
-            <h3>Project name</h3>
-            <p>A short description of what I explored and what I learned.</p>
+            <p class="project-number">PROJECT 01</p>
+            <h3>A question worth exploring</h3>
+            <p>Add a short description of a question you would like to investigate with data.</p>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="project-card" tabindex="0">
-            <p class="project-label">PROJECT 02</p>
-            <h3>Project name</h3>
-            <p>A short description of what I explored and what I learned.</p>
+            <p class="project-number">PROJECT 02</p>
+            <h3>A data story to build</h3>
+            <p>Describe a dataset, idea, or visual story you hope to create here.</p>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="project-card" tabindex="0">
-            <p class="project-label">PROJECT 03</p>
-            <h3>Project name</h3>
-            <p>A short description of what I explored and what I learned.</p>
+            <p class="project-number">PROJECT 03</p>
+            <h3>An idea in progress</h3>
+            <p>Share what you are learning and what you might try next.</p>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
         </div>
       </div>
     </section>
 
-    <footer class="contact page-width" id="contact">
-      <p class="section-index">06 — SAY HELLO</p>
-      <h2>Let's connect.</h2>
-      <a class="email-link" href="mailto:leung.wai.23.12@gmail.com">Email Leung Wai Ting <span aria-hidden="true">↗</span></a>
-      <p class="footer-note">Leung Wai Ting <span aria-hidden="true">·</span> Data Science &amp; Business Intelligence</p>
-    </footer>
+    <section class="contact-section page-width" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Say hello</p>
+        <h2 id="contact-title">Contact</h2>
+      </div>
+      <a class="email-link" href="mailto:leung.wai.23.12@gmail.com">Email Leung Wai Ting <span>leung.wai.23.12@gmail.com</span></a>
+    </section>
   </main>
+
+  <footer class="site-footer page-width">
+    <p>Leung Wai Ting</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 </body>
 </html>
